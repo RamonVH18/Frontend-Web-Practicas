@@ -31,3 +31,11 @@ const prestamo: Prestamo = {
 console.log(calcularMulta(prestamo));
 console.log(armarRecibo(prestamo));
 
+// Ejemplo de uso con un préstamo el cual tiene un atributo de tipo incorrecto
+const prestamoConError: Prestamo = { folio: 'F002', multa: 0, ejemplar: 5, estado: 'vencido', socio: 12345 };
+
+// Ejemplo de uso con un préstamo con estado inválido
+const prestamoInvalido: Prestamo = { folio: 'F003', multa: 50, ejemplar: 1, estado: 'cancelado', socio: 'Carlos' };
+
+// Intento de calcular la multa con un objeto de tipo incorrecto
+console.log(calcularMulta('F001'));
