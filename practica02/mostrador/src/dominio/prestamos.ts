@@ -2,7 +2,7 @@ import { type EstadoPrestamo, type Libro, type Prestamo, LibroNoEncontradoError,
 
 export const DIAS_DE_PRESTAMO = 14;
 
-export const MULTA_POR_DIA = 5;
+export const MULTA_POR_DIA = "5";
 
 const UN_DIA = 86_400_000; // Milisegundos en un día
 

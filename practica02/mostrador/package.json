@@ -1,5 +1,5 @@
 {
-  "scripts":{
+  "scripts": {
     "dev": "tsx src/main.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsc",
