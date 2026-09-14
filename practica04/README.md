@@ -1,14 +1,15 @@
-# RESPUESTAS PRACTICA 3
+# RESPUESTAS PRACTICA 4
 
-### 1. ¿Hizo falta una base de datos real para probar la regla de negocio? ¿Qué dice eso sobre para qué sirve el patrón Repository?
-    R: No hizo falta una base de datos real, esto es gracias al patron repository. Pudimos usar un mock de la base de datos y el servicio ni siquiera se dio cuenta gracias al desacoplamiento.
+### 1. Express manda los rechazos de un handler async directo al middleware de errores, sin try/catch en cada ruta. ¿Qué tendrían que agregar en cada ruta si esto no fuera así?
+    R: Esto lo tendria que meter dentro de un bloque try catch para poder registrar y reenviar el error
+---
+
+### 2. ¿Por qué el servicio no lanza directamente un 409 en vez de EjemplarPrestadoError?
+    R: Esto se hace para poder separar responsabilidades, el EjemplarPrestadoError es informacion de la capa de servicio, esta se ocupa traducir a la capa web
 
 ---
 
-### 2. El Service recibe el repositorio como Repository<Prestamo>, no InMemoryPrestamoRepository. ¿Qué se rompía si usaban la clase concreta?
-    R: Esto haria que el servicio y el repositorio quedaran acoplados, lo que haria que cualquier modificacion en en el repositorio afectaria al servicio y obligaria a modificarlo de igual forma.
+### 3. Si mañana agregaran una app móvil que también consume esta API, ¿qué archivos de esta práctica tendrían que tocar?
+    R: Se podria decir que se ocupa cambiar principalmente la capa del Servidor.
 
----
 
-### 3. Si cambiaran el Map en memoria por una base de datos real, ¿cuántos archivos tocarían? ¿Por qué tan pocos?
-    R: Pues realmente solo se modificaria un archivo que fuese el que actuari como repositrio, esto con el fin de que sirva como conexion con la base de datos. Son muy pocos porque el servicio no conoce al repositorio solo ve lo su interfaz y es con quien se comunica.
