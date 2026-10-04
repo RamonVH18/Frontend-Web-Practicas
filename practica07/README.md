@@ -1,4 +1,4 @@
-# RESPUESTAS PRACTICA 5
+# RESPUESTAS PRACTICA 7
 
 ### 1. ¿Por qué esta interfaz no menciona Express, NestJS ni memoria?
     R: Porque no debe de saberlo, practicamente no debe rebelar con que se trabaja solo debe decir que reglas de negocio esta aplicando a si sin un dia cambiamos Express, NestJS o usamos una base de datos. Quienes consuman la interfaz ni se enteran.

@@ -1,4 +1,4 @@
-# RESPUESTAS PRACTICA 5
+# RESPUESTAS PRACTICA 6
 
 ### 1. ¿Qué pasaría si el módulo no quedara registrado en la raíz?
     R: No arrancaria, debido a que el modulo no seria detectado correctamente.
