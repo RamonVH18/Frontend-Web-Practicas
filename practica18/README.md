@@ -1,4 +1,4 @@
-# RESPUESTAS PRACTICA 17
+# RESPUESTAS PRACTICA 18
 
 ### 1.- ¿Cuánto se ahorró y por qué el ahorro es pequeño en esta aplicación?
     R: Se ahorraron 0.8 kb el ahorro es pequeño porque es una apliicacion pequeño con pocos elementos. En aplicaciones mas grandes el ahorro es mayor.
